@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fd {
+            background-color: #262a3b !important;
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url(https://cdn1.cronometer.com/brand2/assets/DotPatternLarge.svg);
+            background-color: var(--floral-white);
+            background-position: right bottom;
+            background-repeat: no-repeat;
+          
+        }
+
+        .fd img {
+            width: 220px;
+            margin-left: 40px;
+        }
+
+        #container {
+            width: 35%;
+            margin: auto;
+            margin-top: 40px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        #input1,
+        #input2 {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            border: 0.5pt solid black;
+            padding-left: 20px;
+            font-size: 15px;
+        }
+
+        .cen {
+            text-align: center;
+
+        }
+
+        #button {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        #b1 {
+            width: 250px;
+            font-weight: bold;
+            font-size: 15px;
+            height: 50px;
+            justify-content: center;
+            border-radius: 10px;
+            border: 1px solid white;
+            color: white;
+            background-color: #006064;
+
+        }
+
+        .in {
+            margin-bottom: 10px;
+            padding: 0px;
+            font-size: 20px;
+        }
+
+        #ifd {
+            width: 80%;
+            margin: auto;
+        }
+
+        #signup {
+            display: block;
+            margin-top: 0px;
+            padding-bottom: 40px;
+        }
+
+        #forgot {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        #p {
+            display: block;
+            margin: 3px;
+        }
+
+        .ank {
+            font-size: 15pt;
+            color: #006064;
+        }
+
+        #welcome {
+            padding-top: 40px;
+        }
+        body{
+            background-color: floralwhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fd">
+        <img src="https://cdn1.cronometer.com/brand2/Cronometer_MainLogo_FloralWhite_Mandarin.svg" alt="">
+    </div>
+    <div id="container">
+        <div>
+            <h1 id="welcome" class="cen">Welcome Back</h1>
+        </div>
+        <div id="ifd">
+            <h4 class="in">Email</h4>
+            <input id="input1" type="email" placeholder="Email Address">
+            <h4 class="in">Password</h4>
+            <input id="input2" type="password" placeholder="Password">
+            <div class="cen">
+                <div id="button"><button id="b1">LOG IN</button></div>
+                <a id="forgot" class="ank" href="">Forgot your password?</a>
+                <p id="p">Not a member?</p>
+                <a id="signup" class="ank" href="">Sign Up</a>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
