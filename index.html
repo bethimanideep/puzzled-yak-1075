@@ -14,18 +14,18 @@
             align-items: center;
         }
 
+
         .container {
             margin: auto;
-            width: 100%;
-
+            width: 95%;
         }
 
         .container img {
-            width: 290px;
+            width: 280px;
         }
 
         .container1 {
-            margin-left: 20%;
+            margin-left: 22%;
             gap: 50px;
             margin-top: 2%;
 
@@ -36,8 +36,11 @@
             color: black;
         }
 
-        #fd {
-            margin-left: 6%;
+        iframe {
+            width: 85%;
+            height: 400px;
+            margin-left: 70px;
+
         }
 
         .ba {
@@ -49,16 +52,201 @@
             font-size: 20px;
             border-radius: 5px;
         }
-        .page{
+
+        .page {
             text-decoration: none;
         }
+
+        #video {
+            display: flex;
+            margin-left: 2%;
+            height: 450px;
+            margin-top: 50px;
+        }
+
+        .v1 {
+            width: 40%;
+
+        }
+
+        .v1 h1 {
+            font-family: sans-serif;
+            color: #262A3B;
+            font-size: 3.34em;
+            line-height: 1.1em;
+            font-weight: 800;
+            text-align: left;
+            margin-bottom: 20px;
+
+        }
+
+        .v1 h5 {
+            line-height: 1.5em;
+            margin-top: 1px;
+            margin-bottom: 50px;
+
+            font-size: 1.60em;
+            font-weight: 400;
+            color: #262a3b;
+        }
+
+        .v2 {
+            padding-left: 120px;
+        }
+
+        #v {
+            background-image: url(https://cdn1.cronometer.com/brand2/assets/DotPatternLarge.svg);
+            background-position: right bottom;
+            background-repeat: no-repeat;
+            width: 70%;
+
+        }
+
+        p {
+            font-family: sans-serif;
+        }
+
+        #sa {
+            padding: 3% 10%;
+            border-radius: 10px;
+            background-color: #44d07b;
+            font-family: sans-serif;
+            color: #262a3b;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.25em;
+            letter-spacing: 0.5px;
+        }
+
+        .seen {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #262a3bb9;
+            font-family: sans-serif;
+            font-size: 1em;
+            line-height: 1em;
+            font-size: 15px;
+
+        }
+
+        #third {
+            margin-top: 30px;
+            background-color: #e1f5fe49;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            border-top: 1px solid #e1f5fe49;
+            border-bottom: 1px solid #e1f5fe49;
+        }
+
+        .img1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(1);
+        }
+
+        .img1 img {
+            width: 180px;
+        }
+
+        #s1 {
+            text-align: end;
+        }
+
+        #s2 img {
+            width: 150px;
+
+        }
+
+        #s2 {
+
+            text-align: center;
+        }
+
+        #s3 {
+            text-align: start;
+        }
+
+        #four {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 33px;
+        }
+
+        #four img {
+            width: 180px;
+        }
+
+        #four div:nth-child(1) {
+            text-align: end;
+        }
+
+        #four div:nth-child(2) {
+            text-align: start;
+        }
+
+        .see {
+            margin-top: 30px;
+        }
+        #five{
+            margin-top: 80px;
+        }
+
+        .five1 {
+            text-align: center;
+            font-family: sans-serif;
+            width: 38%;
+            margin: auto;
+        }
+
+        .five1 p {
+            font-size: 20px;
+            color: #262A3B;
+            margin: 0px;
+
+        }
+
+        .five1 h2 {
+            font-size: 40px;
+            color: #262A3B;
+            font-weight: 800;
+            margin: 0px;
+        }
+        
+        .five2{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2);
+            width: 90%;
+            margin: auto;
+            gap: 30px 70px;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .five2 h5{
+            font-size: 22px;
+            font-family: sans-serif;
+            color: #262A3B;
+            margin: 0px;
+        }
+        .resize{
+            width: 78%;
+            margin: auto;
+
+            
+        }
+        .five2 img{
+            width: 200px;
+        }
+        
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div id="fd"><a href=""><img src="https://cdn1.cronometer.com/webflow/Cronometer-Logo---Mandarin.svg"
-                    alt="logo"></a>
+        <div id="fd">
+            <a href="index.html">
+                <img src="https://cdn1.cronometer.com/webflow/Cronometer-Logo---Mandarin.svg" alt="logo">
+            </a>
         </div>
         <div class="container1">
             <div>
@@ -84,10 +272,97 @@
             </div>
         </div>
     </div>
-</body>
-<script>
-    let button = document.getElementById('button')
+    <div id="video">
+        <div class="v1">
+            <h1>
+                Eat smarter.
+                <br>
+                Live better.
+            </h1>
+            <h5>Track your diet, exercise, and health data.</h5>
+            <div id="signup"><a id="sa" href="signup.html">Sign Up -It's Free!</a></div>
+        </div>
+        <div id="v">
+            <div class="v2">
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4iJYKW826RQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe> -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4iJYKW826RQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div id="third">
+        <div class="seen">
+            <p>As seen in</p>
+        </div>
+        <div class="img1">
+            <div id="s1"><img src="https://cdn1.cronometer.com/webflow/media-mention-2.svg" alt=""></div>
+            <div id="s2"><img src="https://cdn1.cronometer.com/webflow/media-mention-1.svg" alt=""></div>
+            <div id="s3"><img src="https://cdn1.cronometer.com/webflow/media-mention-3.svg" alt=""></div>
+        </div>
+        <div class="seen see">
+            <p>Available on Web, iOS and Android</p>
+        </div>
+        <div id="four">
+            <div>
+                <img src="https://cdn1.cronometer.com/webflow/ios-icon.svg" alt="">
+            </div>
+            <div>
+                <img src="https://cdn1.cronometer.com/webflow/android-icon.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="five">
+        <div>
+            <div class="five1">
+                <h2>Develop healthy habits</h2>
+                <p>Count your calories, ensure you're meeting nutrient targets, and see your progress over time.</p>
+            </div>
+        </div>
+    </div>
+    <div class="five2">
+        <div>
+            <img src="https://cdn1.cronometer.com/webflow/cronometer-features-11.svg" alt="">
+            <div class="resize"><h5>Track up to 84 nutrients and other compounds</h5></div>
+            <p>Log your meals and track all your macro and micronutrients.</p>
+        </div>
+        <div>
+            <img src="https://cdn1.cronometer.com/webflow/cronometer-features-14.svg" alt="">
+            <div class="resize"><h5>Log meals, exercise and health metrics</h5></div>
+            <p>Plus, you can create custom foods, recipes, exercises and metrics.</p>
+        </div>
 
-</script>
+        <div>
+            <img src="https://cdn1.cronometer.com/webflow/cronometer-features-13.svg" alt="">
+            <div class="resize"><h5>Get valuable health reports and charts</h5></div>
+            <p>Learn how nutrients and metrics correlate over time.</p>
+        </div>
+        
+        <div>
+            <img src="https://cdn1.cronometer.com/webflow/cronometer-features-16.svg" alt="">
+            <div class="resize"><h5>Custom diet settings</h5></div>
+            <p>Set weight, macro and nutrient targets to meet your goals.</p>
+        </div>
+
+        <div>
+            <img src="https://cdn1.cronometer.com/webflow/cronometer-features-15.svg" alt="">
+            <div class="resize"><h5>Fasting timer</h5></div>
+            <p>Track your intermittent fasts and see their effect over time.</p>
+        </div>
+
+        <div>
+            <img src="https://cdn1.cronometer.com/webflow/cronometer-features-12.svg" alt="">
+            <div><h5>Diet support</h5></div>
+            <p>Whether you’re Keto, Vegan, or on one recommended by your doctor.</p>
+        </div>
+        
+    </div>
+
+</body>
 
 </html>
