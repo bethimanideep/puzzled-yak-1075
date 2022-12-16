@@ -21,7 +21,7 @@
             background-color: var(--floral-white);
             background-position: right bottom;
             background-repeat: no-repeat;
-          
+
         }
 
         .fd img {
@@ -110,7 +110,8 @@
         #welcome {
             padding-top: 40px;
         }
-        body{
+
+        body {
             background-color: floralwhite;
         }
     </style>
@@ -118,7 +119,8 @@
 
 <body>
     <div class="fd">
-        <a href="index.html"><img src="https://cdn1.cronometer.com/brand2/Cronometer_MainLogo_FloralWhite_Mandarin.svg" alt=""></a>
+        <a href="index.html"><img src="https://cdn1.cronometer.com/brand2/Cronometer_MainLogo_FloralWhite_Mandarin.svg"
+                alt=""></a>
     </div>
     <div id="container">
         <div>
@@ -133,13 +135,37 @@
                 <div id="button"><button id="b1">LOG IN</button></div>
                 <a id="forgot" class="ank" href="">Forgot your password?</a>
                 <p id="p">Not a member?</p>
-                <a id="signup" class="ank" href="">Sign Up</a>
+                <a id="signup" class="ank" href="signup.html">Sign Up</a>
             </div>
 
         </div>
 
     </div>
-    
 </body>
+<script>
+    let val = JSON.parse(localStorage.getItem('key')) || []
+    let email = document.getElementById('input1')
+    let password = document.getElementById('input2')
+    let button = document.getElementById('b1')
+    button.addEventListener("click", () => {
+        if (email.value === '') {
+            alert('Fill the Email')
+        }
+        else if (password.value === '') {
+            alert('Fill the Password')
+        }
+        if (email.value!=''&&password.value!='') {
+            for (let i = 0; i < val.length; i++) {
+                if (val[i].email === email.value && val[i].password === password.value) {
+                    alert('LOGIN SUCCESFUL')
+                    break;
+                } else {
+                    alert('INCORRECT EMALID OR PASSWORD')
+                    break;
+                }
+            }
+        }
+    })
+</script>
 
 </html>
