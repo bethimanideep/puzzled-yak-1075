@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healthcure</title>
     <style>
         .container,
@@ -187,7 +186,8 @@
         .see {
             margin-top: 30px;
         }
-        #five{
+
+        #five {
             margin-top: 80px;
         }
 
@@ -211,33 +211,421 @@
             font-weight: 800;
             margin: 0px;
         }
-        
-        .five2{
+
+        .five2 {
             display: grid;
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2);
             width: 90%;
             margin: auto;
             gap: 30px 70px;
             text-align: center;
             margin-top: 100px;
+            margin-bottom: 150px;
         }
-        .five2 h5{
+
+        .five2 h5 {
             font-size: 22px;
             font-family: sans-serif;
             color: #262A3B;
             margin: 0px;
         }
-        .resize{
+
+        .resize {
             width: 78%;
             margin: auto;
 
-            
+
         }
-        .five2 img{
+
+        .five2 img {
             width: 200px;
         }
+
+        #nutrition div:nth-child(2) h6 {
+            margin-top: 15px;
+            margin-bottom: 0px;
+            font-family: sans-serif;
+            color: #262a3b;
+            font-size: 1.40em;
+            line-height: 1.5em;
+            font-weight: 400;
+        }
+
+        #nutrition div:nth-child(2) {
+            width: 50%;
+            margin: auto;
+        }
+
+        #nutrition div:nth-child(1) h2 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-family: 'Work Sans', sans-serif;
+            color: #262a3b;
+            font-size: 2.50em;
+            line-height: 1.1em;
+            font-weight: 800;
+        }
+
+        #nutrition {
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        #nutritiondata {
+            display: flex;
+            width: 95%;
+            margin: auto;
+            padding-bottom: 80px;
+        }
+
+        #nutrition2 img {
+            width: 30%;
+            padding-left: 60%;
+            padding-bottom: 20%;
+
+        }
+
+        #nutrition2 {
+            display: grid;
+            grid-column-gap: 20px;
+            grid-template-columns: 0.25fr 1fr;
+            grid-template-rows: 30% 30% 30%;
+            width: 48%;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+            padding-right: 90px;
+
+
+
+        }
+
+        #nutrition2 div p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        #nutrition2 div h5 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-family: Manrope, sans-serif;
+            color: #262a3b;
+            font-size: 1.41em;
+            line-height: 1.5em;
+            font-weight: 700;
+            text-align: left;
+            letter-spacing: normal;
+            text-transform: none;
+        }
+
+        #nutrition1 {
+            width: 50%;
+
+        }
+
+        #signup2 {
+
+            padding: 1% 4%;
+            border-radius: 10px;
+            background-color: #44d07b;
+            font-family: sans-serif;
+            color: #262a3b;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.25em;
+            letter-spacing: 0.5px;
+
+        }
+
+        #signuptext {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-family: Manrope, sans-serif;
+            color: white;
+            font-size: 1.41em;
+            line-height: 1.5em;
+            font-weight: 7
+        }
+
+        #lowersignup div:nth-child(1) {
+            text-align: center;
+            padding: 30px;
+            width: 45%;
+            margin: auto;
+        }
+
+        #lowersignup {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.904);
+            height: 200px;
+
+        }
+
+        #apps {
+            text-align: center;
+            padding: 6% 0%;
+        }
+
+        #apps h1 {
+            font-family: Manrope, sans-serif;
+            color: rgba(0, 0, 0, 0.897);
+            font-size: 2.5em;
+            line-height: 1.5em;
+            font-weight: 900;
+        }
+
+        #reviews {
+            padding-bottom: 9%;
+            background-color: #e6f3fa3a;
+            border-bottom: #E1F5FE 2px solid;
+            border-top: #dff4fd 2px solid;
+        }
+
+        #reviews h2 {
+            font-family: 'Work Sans', sans-serif;
+            color: #262a3b;
+            font-size: 40px;
+            line-height: 1.1em;
+            font-weight: 800;
+            text-align: center;
+            margin-top: 6%;
+            margin-bottom: 6%;
+
+        }
+
+        #reviews div p:nth-child(1) {
+            font-family: Manrope, sans-serif;
+            color: #262a3b;
+            font-size: 17px;
+        }
+
+        #reviews div:nth-child(1) img {
+            margin-left: 70px;
+
+        }
+
+        #reviews div:nth-child(2) p:nth-child(2) {
+            margin-top: 40px;
+            font-family: Manrope, sans-serif;
+            color: #262a3b;
+            font-size: 1em;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        #reviewsgrid1 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 75%;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        #reviewsgrid1 div:nth-child(1) {
+            text-align: center;
+        }
+
+        #reviewsgrid1 div:nth-child(1) h5 {
+            margin: 20px;
+            margin-top: 30px;
+            font-family: 'Work Sans', sans-serif;
+            color: #005c5c;
+            font-size: 23px;
+        }
+
+        #reviewsgrid2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 75%;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 75px;
+        }
+
+        #reviewsgrid2 div:nth-child(2) h5 {
+            padding-left: 8%;
+            font-family: 'Work Sans', sans-serif;
+            color: #005c5c;
+            font-size: 25px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        #reviewsgrid2 div:nth-child(2) img {
+            margin-left: 170px;
+        }
+
+        #reviewsgrid2 div:nth-child(1) {
+            padding: 18px;
+        }
+
+        #reviewsgrid2 div:nth-child(1) p:nth-child(2) {
+            margin-top: 4%;
+            margin-bottom: 2%;
+            font-family: Manrope, sans-serif;
+            color: #262a3b;
+            font-size: 1em;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        #cronometerpro {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 93%;
+
+            margin: auto;
+            padding-top: 8%;
+            padding-bottom: 8%;
+            border-bottom: 1px solid rgba(0, 119, 255, 0.61);
+        }
+
+        #cronometerpro div:nth-child(1) {
+            text-align: center;
+            padding: 20% 15%;
+        }
+
+        #cronoimg2 {
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        #cronoh5,
+        #cronop {
+            font-size: 17px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #cronoh5 {
+            margin-top: 4%;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+        #cronop {
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        #cronoa {
+            font-size: 20px;
+            font-family: sans-serif;
+            text-decoration: none;
+            color: black;
+            border: 1px black solid;
+            padding: 2% 9%;
+            border-radius: 10px;
+        }
+
+        #affiliate,
+        #affiliatep {
+            display: flex;
+            justify-content: center;
+        }
+
+        #affiliate {
+            color: #005c5c;
+            font-family: Manrope, sans-serif;
+            font-size: 18px;
+            line-height: 1.5em;
+        }
+
+        #affiliatep {
+            font-size: 17px;
+
+
+        }
+
+        #affi {
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+
+        .container1 {
+            margin: auto;
+            padding-left: 8%;
+            margin-left: 15%;
+            width: 15%;
+            position: relative;
+        }
+
+        .megamenu {
+            position: absolute;
+            z-index: 25;
+            top: 100%;
+            left: 0px;
+            opacity: 0;
+            visibility: hidden;
+            width: 100%;
+            height: 160px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: grid;
+            grid-template-columns: 80px 100%;
+            grid-template-rows: 80px 80px;
+            border-radius: 10px;
+            align-items: center;
+
+        }
+
+
+
+        .megamenu img {
+            width: 60%;
+
+        }
+
+        .hov {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .megamenu a,
+        .megamenu p {
+            margin: 5px;
+            padding: 0px;
+        }
         
+
+        .megamenu p {
+            font-size: 15px;
+        }
+
+        #producthover:hover .megamenu {
+            opacity: 1;
+            z-index: 1;
+            visibility: visible;
+
+        }
+
+        iframe {
+            position: relative;
+            z-index: 0;
+        }
+        .megamenu div:nth-child(2) p,.megamenu div:nth-child(4) p{
+            font-size: 15px;
+        }
+        .megamenu div:nth-child(2) a,.megamenu div:nth-child(4) a{
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .megamenu div:nth-child(2) a:hover{
+            color: orangered;
+        }
+        .megamenu div:nth-child(4) a:hover{
+            color: rgba(0, 128, 0, 0.712);
+        }
+
     </style>
 </head>
 
@@ -249,8 +637,24 @@
             </a>
         </div>
         <div class="container1">
-            <div>
+            <div id="producthover">
                 <p>Products</p>
+                <div class="megamenu">
+                    <div class="hov">
+                        <img src="https://cdn1.cronometer.com/webflow/Cronometer-Icon---Mandarin.svg" alt="">
+                    </div>
+                    <div>
+                        <a href="">Cronometer</a>
+                        <p>For Individuals</p>
+                    </div>
+                    <div class="hov">
+                        <img src="https://cdn1.cronometer.com/webflow/Cronometer-Pro-Icon.svg" alt="">
+                    </div>
+                    <div>
+                        <a href="">CronometerPro</a>
+                        <p>For Health Care Professionals</p>
+                    </div>
+                </div>
             </div>
             <div>
                 <a href="Support.html" class="page">
@@ -284,11 +688,6 @@
         </div>
         <div id="v">
             <div class="v2">
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/4iJYKW826RQ"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe> -->
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/4iJYKW826RQ"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -328,39 +727,154 @@
     <div class="five2">
         <div>
             <img src="https://cdn1.cronometer.com/webflow/cronometer-features-11.svg" alt="">
-            <div class="resize"><h5>Track up to 84 nutrients and other compounds</h5></div>
+            <div class="resize">
+                <h5>Track up to 84 nutrients and other compounds</h5>
+            </div>
             <p>Log your meals and track all your macro and micronutrients.</p>
         </div>
         <div>
             <img src="https://cdn1.cronometer.com/webflow/cronometer-features-14.svg" alt="">
-            <div class="resize"><h5>Log meals, exercise and health metrics</h5></div>
+            <div class="resize">
+                <h5>Log meals, exercise and health metrics</h5>
+            </div>
             <p>Plus, you can create custom foods, recipes, exercises and metrics.</p>
         </div>
 
         <div>
             <img src="https://cdn1.cronometer.com/webflow/cronometer-features-13.svg" alt="">
-            <div class="resize"><h5>Get valuable health reports and charts</h5></div>
+            <div class="resize">
+                <h5>Get valuable health reports and charts</h5>
+            </div>
             <p>Learn how nutrients and metrics correlate over time.</p>
         </div>
-        
+
         <div>
             <img src="https://cdn1.cronometer.com/webflow/cronometer-features-16.svg" alt="">
-            <div class="resize"><h5>Custom diet settings</h5></div>
+            <div class="resize">
+                <h5>Custom diet settings</h5>
+            </div>
             <p>Set weight, macro and nutrient targets to meet your goals.</p>
         </div>
 
         <div>
             <img src="https://cdn1.cronometer.com/webflow/cronometer-features-15.svg" alt="">
-            <div class="resize"><h5>Fasting timer</h5></div>
+            <div class="resize">
+                <h5>Fasting timer</h5>
+            </div>
             <p>Track your intermittent fasts and see their effect over time.</p>
         </div>
 
         <div>
             <img src="https://cdn1.cronometer.com/webflow/cronometer-features-12.svg" alt="">
-            <div><h5>Diet support</h5></div>
+            <div>
+                <h5>Diet support</h5>
+            </div>
             <p>Whether you’re Keto, Vegan, or on one recommended by your doctor.</p>
         </div>
-        
+    </div>
+    <div id="nutrition">
+        <div>
+            <h2>Discover your nutrition</h2>
+        </div>
+        <div>
+            <h6>Cronometer encourages you to not just count your calories but to focus on your nutrition as a whole.
+            </h6>
+        </div>
+    </div>
+    <div id="nutritiondata">
+        <div id="nutrition1">
+            <img src="https://cdn1.cronometer.com/webflow/crono-hero-img-22x-1-p-1600.png" alt="" width="95%">
+        </div>
+        <div id="nutrition2">
+            <div>
+                <img src="https://cdn1.cronometer.com/webflow/checkmark.svg" alt="">
+            </div>
+            <div>
+                <h5>Over 6 million users</h5>
+                <p>Join the community to get tips and inspiration from other users on our forums and Facebook group.</p>
+            </div>
+
+
+            <div>
+                <img src="https://cdn1.cronometer.com/webflow/checkmark.svg" alt="">
+            </div>
+            <div>
+                <h5>Accurate nutrition data</h5>
+                <p>Be confident that the food you log has the correct nutrition data. We verify every food submission
+                    for accuracy.</p>
+            </div>
+
+
+            <div>
+                <img src="https://cdn1.cronometer.com/webflow/checkmark.svg" alt="">
+            </div>
+            <div>
+                <h5>Data privacy & security</h5>
+                <p>We don't sell your account data to third parties and take the security of our users' accounts
+                    seriously.</p>
+            </div>
+        </div>
+    </div>
+    <div id="lowersignup">
+        <div>
+            <h6 id="signuptext">Find out if you're getting the vitamins and minerals you need with our food diary app.
+            </h6>
+        </div>
+        <div>
+            <a href="signup.html" id="signup2">Sign Up - It's Free!</a>
+        </div>
+    </div>
+    <div id="apps">
+        <h1>Sync with apps and devices</h1>
+        <img src="https://cdn1.cronometer.com/webflow/cronometer-devices-3-p-1080.png" alt="">
+    </div>
+    <div id="reviews">
+        <div>
+            <h2>Cronometer reviews</h2>
+        </div>
+        <div id="reviewsgrid1">
+            <div>
+                <h5>A great all-in-one health app!</h5>
+                <img src="https://cdn1.cronometer.com/webflow/ios-icon.svg" alt="" width="30%">
+
+            </div>
+            <div>
+                <p>After leaving SparkPeople, I came here. I love that it is Canadian, includes fasting, can import
+                    recipes,
+                    gives me macro details, and more. This is my daily tracking app.
+                </p>
+                <p>iOS Review</p>
+            </div>
+        </div>
+        <div id="reviewsgrid2">
+            <div>
+                <p>Awesome. Getting direct feedback when you track your food really opens your eyes to what you're
+                    putting in your body. The modularity and ability to track macros, micros, and calories in -calories
+                    out makes this an invaluable tool for any nutritional goal.</p>
+                <p>Android Review</p>
+            </div>
+            <div>
+                <h5>Whether that's bodybuilding, weight loss, endurance training, or just maintenance – everyone should
+                    be using Cronometer.</h5>
+                <img src="https://cdn1.cronometer.com/webflow/android-icon.svg" alt="" width="30%">
+            </div>
+        </div>
+    </div>
+    <div id="cronometerpro">
+        <div>
+            <img id="cronoimg1" src="https://cdn1.cronometer.com/webflow/Cronometer-Pro-Logo.svg" alt="" width="75%">
+            <h5 id="cronoh5">For Health Professionals</h5>
+            <p id="cronop">Client diet management for nutritionists, dietitians, research teams, schools, and hospitals.
+            </p>
+            <a href="" id="cronoa">Learn About Pro</a>
+        </div>
+        <div>
+            <img id="cronoimg2" src="https://cdn1.cronometer.com/webflow/pro-hero-1-1-p-1600.png" alt="">
+        </div>
+    </div>
+    <div id="affi">
+        <p id="affiliatep">Help us spread the good word about nutrition.</p>
+        <a id="affiliate" href="">Become an Affiliate</a>
     </div>
 
 </body>

@@ -274,3 +274,55 @@ body{
     background-repeat: no-repeat;
 
 }
+#row2,#row3{
+    display: flex;
+}
+#row21,#row31{
+    display: flex;
+    padding-left: 170px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#ft,
+#inn,
+#cm,
+#height,
+#weight,
+#weightnumber,
+#typeofweight {
+
+    height: 40px;
+}
+
+#weightnumber{
+    width: 90px;
+}
+
+#ft {
+    width: 80px;
+}
+
+#inn{
+    width: 150px;
+
+}
+#typeofweight{
+    width: 140px;
+}
+
+#cm {
+    width: 100px;
+    margin-top: 20px;
+}
+#height{
+    margin-top: 20px;
+}
+#centimeter,#cm{
+    margin: 0px;
+    padding: 0px;
+}
+#height p,#weight p{
+    font-family: sans-serif;
+    font-weight: bold;
+}
