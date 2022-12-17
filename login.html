@@ -83,7 +83,21 @@
         #ifd {
             width: 80%;
             margin: auto;
+            
         }
+        #container{
+            position: relative;
+        }
+        #loginhover{
+            
+            visibility: hidden;
+            opacity: 0;
+            position: fixed;
+
+        }
+        
+        
+
 
         #signup {
             display: block;
@@ -134,6 +148,13 @@
             <div class="cen">
                 <div id="button"><button id="b1">LOG IN</button></div>
                 <a id="forgot" class="ank" href="">Forgot your password?</a>
+                <div id="loginhover">
+                    <div><img src="https://cdn1.cronometer.com/landing/nh-close.png" alt=""></div>
+                    <div>h1</div>
+                    <div><input type="email"></div>
+                    <button style="color: white;border-radius: 10px;">RESET PASSWORD</button>
+                </div>
+
                 <p id="p">Not a member?</p>
                 <a id="signup" class="ank" href="signup.html">Sign Up</a>
             </div>
@@ -147,6 +168,26 @@
     let email = document.getElementById('input1')
     let password = document.getElementById('input2')
     let button = document.getElementById('b1')
+    let forgotpassword=document.getElementById('forgot')
+    let loginhover=document.getElementById('loginhover')
+    let body=document.querySelector('body')
+    let container=document.getElementById('container')
+    forgotpassword.addEventListener("click",(e)=>{
+        e.preventDefault()
+        loginhover.style.opacity='1'
+    
+        loginhover.style.visibility='visible'
+        loginhover.style.backgroundColor='white'
+        loginhover.style.left='0'
+        loginhover.style.position='fixed'
+        loginhover.style.top='10%'
+        loginhover.style.height='300px'
+        loginhover.style.width='100%'
+        container.style.filter='blur(2px)'
+        loginhover.style.boxShadow = "10px 20px 30px 1px";
+        loginhover.style.transition='0.5s'
+    })
+
     button.addEventListener("click", () => {
         if (email.value === '') {
             alert('Fill the Email')
@@ -154,16 +195,25 @@
         else if (password.value === '') {
             alert('Fill the Password')
         }
-        if (email.value!=''&&password.value!='') {
+        let temp=false
+        if (email.value != '' && password.value != '') {
             for (let i = 0; i < val.length; i++) {
                 if (val[i].email === email.value && val[i].password === password.value) {
-                    alert('LOGIN SUCCESFUL')
+                    temp=true
                     break;
+                    
                 } else {
-                    alert('INCORRECT EMALID OR PASSWORD')
-                    break;
+                    temp=false
+                    
                 }
             }
+        }
+        
+        if(temp===true){
+            alert('LOGIN SUCCESFUL')
+        }
+        if(temp===false){
+            alert('INCORRECT EMALID OR PASSWORD')
         }
     })
 </script>
