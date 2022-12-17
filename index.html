@@ -17,6 +17,7 @@
         .container {
             margin: auto;
             width: 95%;
+            margin-top: 2%;
         }
 
         .container img {
@@ -27,6 +28,7 @@
             margin-left: 22%;
             gap: 50px;
             margin-top: 2%;
+            
 
         }
 
@@ -419,7 +421,7 @@
             grid-template-columns: repeat(2, 1fr);
             width: 75%;
             margin: auto;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             border-radius: 10px;
             padding: 10px;
         }
@@ -441,10 +443,11 @@
             grid-template-columns: repeat(2, 1fr);
             width: 75%;
             margin: auto;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             border-radius: 10px;
             padding: 10px;
             margin-top: 75px;
+            padding-bottom: 30px;
         }
 
         #reviewsgrid2 div:nth-child(2) h5 {
@@ -572,11 +575,9 @@
             grid-template-rows: 80px 80px;
             border-radius: 10px;
             align-items: center;
+            background-color: white;
 
         }
-
-
-
         .megamenu img {
             width: 60%;
 
@@ -593,7 +594,7 @@
             margin: 5px;
             padding: 0px;
         }
-        
+
 
         .megamenu p {
             font-size: 15px;
@@ -603,29 +604,111 @@
             opacity: 1;
             z-index: 1;
             visibility: visible;
-
         }
-
-        iframe {
-            position: relative;
-            z-index: 0;
-        }
-        .megamenu div:nth-child(2) p,.megamenu div:nth-child(4) p{
+        .megamenu div:nth-child(2) p,
+        .megamenu div:nth-child(4) p {
             font-size: 15px;
         }
-        .megamenu div:nth-child(2) a,.megamenu div:nth-child(4) a{
+
+        .megamenu div:nth-child(2) a,
+        .megamenu div:nth-child(4) a {
             font-size: 20px;
             text-decoration: none;
             color: black;
             font-weight: bold;
         }
-        .megamenu div:nth-child(2) a:hover{
+
+        .megamenu div:nth-child(2) a:hover {
             color: orangered;
         }
-        .megamenu div:nth-child(4) a:hover{
+
+        .megamenu div:nth-child(4) a:hover {
             color: rgba(0, 128, 0, 0.712);
         }
 
+
+        .footer1 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;            
+            padding-top: 5%;
+            padding-right: 5%;
+            gap: 10%;
+            width: 90%;
+            margin: auto;
+            border-bottom: 0.5pt rgb(224, 248, 255) solid;
+
+        }
+
+        .footer1 a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .footer2 a {
+            color: white;
+            font-size: 17px;
+        }
+
+
+        #footer h1 {
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+
+        .insidefooter1 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+
+        }
+        #footer div{
+            padding-bottom: 3%;
+        }
+
+
+        #footer21 {
+            display: grid;
+            grid-template-columns: 60% 20% 20%;
+            grid-template-rows: auto;
+            margin-top: 3%;
+        }
+        .footer2{
+            width: 95%;
+            margin: auto;
+        }
+
+
+        #footer {
+            background-color: #262a3b;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #footer22 p {
+            color: white;
+            margin: 0px;
+            
+        }
+        #footer22{
+            margin-top: 20px;
+        }
+        #footer211 img{
+            width: 5%;
+            margin-right: 20px;
+            margin-top: 20px;
+            
+        }
+        .platformima{
+            display: flex;
+            justify-content: end;
+        }
     </style>
 </head>
 
@@ -876,7 +959,56 @@
         <p id="affiliatep">Help us spread the good word about nutrition.</p>
         <a id="affiliate" href="">Become an Affiliate</a>
     </div>
-
+    <div id="footer">
+        <div class="footer1">
+            <div><img src="https://cdn1.cronometer.com/webflow/Cronometer-Icon---Mandarin.svg" alt="" width="40%"></div>
+            <div>
+                <h1>The Product</h1>
+                <div id="productfooter" class="insidefooter1">
+                    <a href="">For Individuals</a>
+                    <a href="">For Professionals</a>
+                    <a href="">Privacy</a>
+                    <a href="">Terms</a>
+                </div>
+            </div>
+            <div>
+                <h1>The Company</h1>
+                <div id="companyfooter" class="insidefooter1">
+                    <a href="">About Us</a>
+                    <a href="">Crono Blog</a>
+                    <a href="">Crono Forums</a>
+                    <a href="">Jobs</a>
+                    <a href="">Support</a>
+                </div>
+            </div>
+            <div>
+                <h1>Partners & Affiliates</h1>
+                <div id="partnerfooter" class="insidefooter1">
+                    <a href="">Affiliate Program</a>
+                    <a href="">Media Kit</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <div id="footer21">
+                <div id="footer211">
+                    <img src="https://cdn1.cronometer.com/webflow/instragm-icon-snow-white.svg" alt="">
+                    <img src="https://cdn1.cronometer.com/webflow/facebook-icon-snow-white.svg" alt="">
+                    <img src="https://cdn1.cronometer.com/webflow/twitter-icon-snow-white.svg" alt="">
+                    <img src="https://cdn1.cronometer.com/webflow/youtube-icon-snow-white.svg" alt="">
+                </div>
+                <div class="platformima"><img src="https://cdn1.cronometer.com/webflow/ios-icon.svg" alt="" width="50%"></div>
+                <div class="platformima"><img src="https://cdn1.cronometer.com/webflow/android-icon.svg" alt="" width="50%"></div>
+                <div>
+                    <a href="">support@cronometer.com</a>
+                </div>
+            </div>
+            <div id="footer22">
+                <p>Copyright © 2011-2022</p>
+                <p>All rights reserved</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
