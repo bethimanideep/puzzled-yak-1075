@@ -12,6 +12,7 @@ let cm = document.getElementById('cm')
 let weightnumber = document.getElementById('weightnumber')
 let typeofweight = document.getElementById('typeofweight')
 
+
 let val = JSON.parse(localStorage.getItem('key')) || []
 
 last.addEventListener('click', () => {
@@ -46,14 +47,17 @@ last.addEventListener('click', () => {
     if (data.email === '') {
         alert('Provide an EMAIL')
     }
-    else if(data.password==''){
+    else if (data.password == '') {
         alert('Fill The Password')
     }
-    else if(data.confirmpassword==''){
+    else if (data.confirmpassword == '') {
         alert('Fill The Confirm Password')
     }
     else if (data.password !== data.confirmpassword) {
         alert('Both Password Not Same')
+    }
+    else if (password.value.length < 5) {
+        alert('Password lendth tooooo short')
     }
     else {
         if (val.length === 0) {
@@ -89,3 +93,28 @@ last.addEventListener('click', () => {
     }
 
 })
+
+
+function checkClickFunc() {
+    var checkbox = document.getElementById('agree');
+    if (checkbox.checked == true) {
+        alert("Checkbox is clicked");
+    }
+    var buttonsighup = document.getElementById('last');
+    buttonsighup.style.backgroundColor = 'green'
+
+    let h3 = document.getElementById('h3');
+    h3.style.color = "white"
+
+
+}
+function checkClick() {
+    var checkbox1 = document.getElementById('agree2');
+    if (checkbox1.checked == true) {
+        alert("Checkbox is clicked");
+    }
+    var buttonsighup = document.getElementById('last');
+    buttonsighup.style.backgroundColor = 'green'
+    let h3 = document.getElementById('h3');
+    h3.style.color = "white"
+}

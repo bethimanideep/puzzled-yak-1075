@@ -159,7 +159,7 @@
         <div id="id3">
             <h2 id="terms">Terms of Service & Privacy Settings</h2>
             <div class="one">
-                <div><input type="checkbox" name="checkall" value="checkall"></div>
+                <div><input id="agree" type="checkbox" name="checkall" onclick="checkClickFunc()" value="checkall"></div>
                 <div>
                     <p>Check All</p>
                 </div>
@@ -168,7 +168,7 @@
                 <p class="finish">By checking the box below you are indicating you have read and agree to our <span class="or">Terms of Service</span> and <span class="or">Privacy Policy</span>.<p>
             </div>
             <div class="one">
-                <div><input type="checkbox" name="agree"></div>
+                <div><input id="agree2" type="checkbox" onclick="checkClick()" name="agree"></div>
                 <div>
                     <p>
                         I agree to the Cronometer Terms of Service and Privacy Policy.</p>
@@ -182,7 +182,7 @@
                 </p>
             </div>
             <div class="one">
-                <div><input type="checkbox" name="emails"></div>
+                <div><input  type="checkbox" name="emails"></div>
                 <div>
                     <p>I agree to receive Cronometer newsletter and promotional emails. (You can opt out at any time.)
                     </p>
@@ -202,7 +202,7 @@
     </div>
     <div id="lastt">
         <button id="last">
-            <h3 style="margin: 0px;">Sign Up</h3>
+            <h3 id="h3" style="margin: 0px;">Sign Up</h3>
         </button>
     </div>
     <div id="header">

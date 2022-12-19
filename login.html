@@ -6,129 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .fd {
-            background-color: #262a3b !important;
-            height: 80px;
-            display: flex;
-            align-items: center;
-        }
-
-        body {
-            margin: 0px;
-            padding: 0px;
-            background-image: url(https://cdn1.cronometer.com/brand2/assets/DotPatternLarge.svg);
-            background-color: var(--floral-white);
-            background-position: right bottom;
-            background-repeat: no-repeat;
-
-        }
-
-        .fd img {
-            width: 220px;
-            margin-left: 40px;
-        }
-
-        #container {
-            width: 35%;
-            margin: auto;
-            margin-top: 40px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            border-radius: 10px;
-            background-color: white;
-        }
-
-        #input1,
-        #input2 {
-            margin: 0px;
-            padding: 0px;
-            width: 100%;
-            height: 40px;
-            border-radius: 5px;
-            border: 0.5pt solid black;
-            padding-left: 20px;
-            font-size: 15px;
-        }
-
-        .cen {
-            text-align: center;
-
-        }
-
-        #button {
-            display: flex;
-            justify-content: center;
-            margin-top: 40px;
-        }
-
-        #b1 {
-            width: 250px;
-            font-weight: bold;
-            font-size: 15px;
-            height: 50px;
-            justify-content: center;
-            border-radius: 10px;
-            border: 1px solid white;
-            color: white;
-            background-color: #006064;
-
-        }
-
-        .in {
-            margin-bottom: 10px;
-            padding: 0px;
-            font-size: 20px;
-        }
-
-        #ifd {
-            width: 80%;
-            margin: auto;
-            
-        }
-        #container{
-            position: relative;
-        }
-        #loginhover{
-            
-            visibility: hidden;
-            opacity: 0;
-            position: fixed;
-
-        }
-        
-        
-
-
-        #signup {
-            display: block;
-            margin-top: 0px;
-            padding-bottom: 40px;
-        }
-
-        #forgot {
-            display: block;
-            margin-top: 20px;
-            margin-bottom: 40px;
-        }
-
-        #p {
-            display: block;
-            margin: 3px;
-        }
-
-        .ank {
-            font-size: 15pt;
-            color: #006064;
-        }
-
-        #welcome {
-            padding-top: 40px;
-        }
-
-        body {
-            background-color: floralwhite;
-        }
-    </style>
+    <link rel="stylesheet" href="css/login.css">
+    
 </head>
 
 <body>
@@ -147,9 +26,11 @@
             <input id="input2" type="password" placeholder="Password">
             <div class="cen">
                 <div id="button"><button id="b1">LOG IN</button></div>
-                <a id="forgot" class="ank" href="">Forgot your password?</a>
+                <a id="forgot" class="ank" onclick="toggle()" href="javascript:void(0);">Forgot your password?</a>
+
+
                 <div id="loginhover">
-                    <div><img src="https://cdn1.cronometer.com/landing/nh-close.png" alt=""></div>
+                    <span>&times;</span>
                     <div>h1</div>
                     <div><input type="email"></div>
                     <button style="color: white;border-radius: 10px;">RESET PASSWORD</button>
@@ -163,59 +44,6 @@
 
     </div>
 </body>
-<script>
-    let val = JSON.parse(localStorage.getItem('key')) || []
-    let email = document.getElementById('input1')
-    let password = document.getElementById('input2')
-    let button = document.getElementById('b1')
-    let forgotpassword=document.getElementById('forgot')
-    let loginhover=document.getElementById('loginhover')
-    let body=document.querySelector('body')
-    let container=document.getElementById('container')
-    forgotpassword.addEventListener("click",(e)=>{
-        e.preventDefault()
-        loginhover.style.opacity='1'
-    
-        loginhover.style.visibility='visible'
-        loginhover.style.backgroundColor='white'
-        loginhover.style.left='0'
-        loginhover.style.position='fixed'
-        loginhover.style.top='10%'
-        loginhover.style.height='300px'
-        loginhover.style.width='100%'
-        container.style.filter='blur(2px)'
-        loginhover.style.boxShadow = "10px 20px 30px 1px";
-        loginhover.style.transition='0.5s'
-    })
-
-    button.addEventListener("click", () => {
-        if (email.value === '') {
-            alert('Fill the Email')
-        }
-        else if (password.value === '') {
-            alert('Fill the Password')
-        }
-        let temp=false
-        if (email.value != '' && password.value != '') {
-            for (let i = 0; i < val.length; i++) {
-                if (val[i].email === email.value && val[i].password === password.value) {
-                    temp=true
-                    break;
-                    
-                } else {
-                    temp=false
-                    
-                }
-            }
-        }
-        
-        if(temp===true){
-            alert('LOGIN SUCCESFUL')
-        }
-        if(temp===false){
-            alert('INCORRECT EMALID OR PASSWORD')
-        }
-    })
-</script>
+<script src="scripts/login.js"></script>
 
 </html>
